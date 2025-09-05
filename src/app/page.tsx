@@ -1,27 +1,28 @@
-"use client";
-import { Container, Button } from "react-bootstrap";
-
 export default function Home() {
   return (
-    <section className="d-flex flex-column justify-content-center align-items-center text-center min-vh-100"
-             style={{ background: "linear-gradient(to bottom, #ffffff, #f1f5fc)" }}>
-      <Container>
-        <h1 className="display-4 fw-bold mb-3" style={{ color: "var(--primary-blue)" }}>
-          Navigate Your Future with <span style={{ color: "var(--accent-red)" }}>LUU Visa Consultant</span>
-        </h1>
-        <p className="lead text-secondary mb-4">
-          Visa Study • Work Permit • Immigration Guidance <br />
-          Professional support to open global opportunities.
-        </p>
-        <div className="d-flex justify-content-center gap-3">
-          <Button size="lg" style={{ backgroundColor: "var(--accent-red)", borderColor: "var(--accent-red)" }}>
-            Check Eligibility
-          </Button>
-          <Button size="lg" variant="outline-dark">
-            Explore Services
-          </Button>
-        </div>
-      </Container>
+    <section
+      className="d-flex flex-column align-items-center justify-content-center text-center"
+      style={{
+        minHeight: "100vh",
+        background: "linear-gradient(135deg, #f0f4ff, #ffffff)",
+      }}
+    >
+      <h1 className="fw-bold display-4 mb-3">
+        Navigate Your Future with{" "}
+        <span style={{ color: "#e60000" }}>LUU Visa Consultant</span>
+      </h1>
+      <p className="lead text-secondary mb-4">
+        Visa Study • Work Permit • Immigration Guidance <br />
+        Professional support to open global opportunities.
+      </p>
+      <div className="d-flex gap-3">
+        <a href="/eligibility" className="btn btn-danger btn-lg">
+          Check Eligibility
+        </a>
+        <a href="/services" className="btn btn-outline-dark btn-lg">
+          Explore Services
+        </a>
+      </div>
     </section>
   );
 }
